@@ -1,0 +1,33 @@
+{
+  "name": "fruit-design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/builder-webpack5": "^6.2.9",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.2.9",
+    "@types/classnames": "^2.3.1",
+    "@types/react": "^17.0.4",
+    "@types/react-dom": "^17.0.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}

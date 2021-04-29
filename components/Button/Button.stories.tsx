@@ -1,4 +1,5 @@
 import React from 'react';
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 import { Meta, Story } from '@storybook/react';
 import { Button, ButtonProps, ButtonTypes } from './Button';
 
@@ -32,7 +33,7 @@ Primary.args = {
   type: 'default',
   children: 'primary',
   onClick: () => {
-    console.log(111);
+    // console.log(111);
   },
 } as ButtonProps;
 Primary.storyName = '测试111';

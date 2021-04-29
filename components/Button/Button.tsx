@@ -24,6 +24,7 @@ export const Button: FC<ButtonProps> = (props) => {
   const { size: customSize, type, children, htmlType, ...rest } = props;
   const classes = cx('btn', {
     [`btn-${customSize}`]: customSize,
+    [`btn-${type}`]: type,
   });
   return (
     <button {...(rest as NativeButtonProps)} type={htmlType} className={classes}>

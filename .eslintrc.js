@@ -1,23 +1,22 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-    jest: true,
-  },
   extends: [
     'airbnb',
-    'plugin:import/typescript',
+    'prettier',
+    'plugin:compat/recommended',
     'plugin:jest/recommended',
     'plugin:react/recommended',
     'plugin:import/typescript',
+    'plugin:markdown/recommended',
   ],
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'react', 'jest', 'babel', 'react-hooks'],
-  globals: {
-    React: true,
-    ReactDOM: true,
-    mountNode: true,
+  env: {
+    browser: true,
+    node: true,
+    jest: true,
+    es6: true,
   },
+  parser: '@typescript-eslint/parser',
+  plugins: ['react', 'babel', 'jest', '@typescript-eslint', 'react-hooks', 'unicorn', 'markdown'],
+  // https://github.com/typescript-eslint/typescript-eslint/issues/46#issuecomment-470486034
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -49,20 +48,7 @@ module.exports = {
 
     'import/extensions': 0,
     'import/no-cycle': 0,
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: [
-          'site/**',
-          'tests/**',
-          'scripts/**',
-          '**/*.test.js',
-          '**/__tests__/*',
-          '*.config.js',
-          '**/*.md',
-        ],
-      },
-    ],
+    'import/no-extraneous-dependencies': 0,
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/anchor-has-content': 0,
     'jsx-a11y/click-events-have-key-events': 0,

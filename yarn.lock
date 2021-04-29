@@ -2493,7 +2493,7 @@
   dependencies:
     "@types/braces" "*"
 
-"@types/minimatch@*":
+"@types/minimatch@*", "@types/minimatch@^3.0.3":
   version "3.0.4"
   resolved "https://registry.npm.taobao.org/@types/minimatch/download/@types/minimatch-3.0.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fminimatch%2Fdownload%2F%40types%2Fminimatch-3.0.4.tgz#f0ec25dbf2f0e4b18647313ac031134ca5b24b21"
   integrity sha1-8Owl2/Lw5LGGRzE6wDETTKWySyE=
@@ -3259,6 +3259,11 @@ arr-union@^3.1.0:
   version "3.1.0"
   resolved "https://registry.nlark.com/arr-union/download/arr-union-3.1.0.tgz#e39b09aea9def866a8f206e288af63919bae39c4"
   integrity sha1-45sJrqne+Gao8gbiiK9jkZuuOcQ=
+
+array-differ@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.nlark.com/array-differ/download/array-differ-3.0.0.tgz#3cbb3d0f316810eafcc47624734237d6aee4ae6b"
+  integrity sha1-PLs9DzFoEOr8xHYkc0I31q7krms=
 
 array-flatten@1.1.1:
   version "1.1.1"
@@ -8434,6 +8439,11 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
+mri@^1.1.5:
+  version "1.1.6"
+  resolved "https://registry.npm.taobao.org/mri/download/mri-1.1.6.tgz#49952e1044db21dbf90f6cd92bc9c9a777d415a6"
+  integrity sha1-SZUuEETbIdv5D2zZK8nJp3fUFaY=
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.nlark.com/ms/download/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -8458,6 +8468,17 @@ multimap@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/multimap/download/multimap-1.1.0.tgz#5263febc085a1791c33b59bb3afc6a76a2a10ca8"
   integrity sha1-UmP+vAhaF5HDO1m7OvxqdqKhDKg=
+
+multimatch@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/multimatch/download/multimatch-4.0.0.tgz#8c3c0f6e3e8449ada0af3dd29efb491a375191b3"
+  integrity sha1-jDwPbj6ESa2grz3SnvtJGjdRkbM=
+  dependencies:
+    "@types/minimatch" "^3.0.3"
+    array-differ "^3.0.0"
+    array-union "^2.1.0"
+    arrify "^2.0.1"
+    minimatch "^3.0.4"
 
 nan@^2.12.1:
   version "2.14.2"
@@ -9365,6 +9386,18 @@ pretty-hrtime@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/pretty-hrtime/download/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
+
+pretty-quick@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/pretty-quick/download/pretty-quick-3.1.0.tgz#cb172e9086deb57455dea7c7e8f136cd0a4aef6c"
+  integrity sha1-yxcukIbetXRV3qfH6PE2zQpK72w=
+  dependencies:
+    chalk "^3.0.0"
+    execa "^4.0.0"
+    find-up "^4.1.0"
+    ignore "^5.1.4"
+    mri "^1.1.5"
+    multimatch "^4.0.0"
 
 prismjs@^1.21.0, prismjs@~1.23.0:
   version "1.23.0"
